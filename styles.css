@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+    "sidebar navbar"
+    "sidebar hero";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  grid-area: navbar;
+  height: 20%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarTop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarBottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarBottomRight ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero {
+  grid-area: hero;
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+}
+
+.projects {
+  grid-area: projects;
+}
+.projectCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.projectCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.announcements {
+  grid-area: announcements;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 40%;
+}
+
+.trending {
+  grid-area: trending;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 40%;
+}
+
+.trendingProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
